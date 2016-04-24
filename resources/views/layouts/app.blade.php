@@ -40,7 +40,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                    MobiSnacks
                 </a>
             </div>
 
@@ -48,6 +48,10 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
+                    <li><a href="{{ url('/about') }}">About</a></li>
+                    <li><a href="{{ url('/vendors') }}">Vendors</a></li>
+                    <li><a href="{{ url('/drivers') }}">Drivers</a></li>
+
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -63,6 +67,8 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/account/update') }}"><i class="fa fa-btn fa-user"></i>Update Account Details</a></li>
+                                <li><a href="{{ url('/account/bank/update') }}"><i class="fa fa-btn fa-university"></i>Update Bank Details</a></li>
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                             </ul>
                         </li>
