@@ -4,11 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class DriverProfile extends Model
+class UserProfile extends Model
 {
     //
  	public $fillable = [
-	'address'
+	'address',
+  'phone'
 	];
 
 	public function user(){

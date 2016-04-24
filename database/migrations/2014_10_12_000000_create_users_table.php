@@ -18,10 +18,10 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('api_token',60)->unique();
- 	    $table->string('role')->default('user');
-	    $table->string('stripe_secret')->nullable();
-	    $table->string('stripe_key')->nullable();
-	    $table->string('stripe_id')->nullable();
+ 	          $table->string('role')->default('user');
+	          $table->string('stripe_secret')->nullable();
+	          $table->string('stripe_key')->nullable();
+            $table->string('stripe_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
